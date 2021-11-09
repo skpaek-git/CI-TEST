@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@900&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+<style>
+body {
+	background-image: url("./배경화면.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+</style>
+</head>
+<body>
+<center>
+<h1 style="font-family: 'Noto Serif KR', serif;"> 찾아 오시는 길</h1>
+<h3> 서울 리조트는 위도(37.525394) 경도(126.926620)에 위치해있습니다.</h3>
+<table width=800>
+	<div class="map">
+		<div class="kakaoMap">
+			<div id="map" style="width:50%;height:378px;"></div>				
+			<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8caf09f28bd9787a5acf6164aa3f7c4f&libraries=services"></script>
+			
+			<script>
+            var mapContainer = document.getElementById('map'),
+               mapOption = {
+                        center: new kakao.maps.LatLng(37.3860521, 127.1214038),
+                        level: 3 
+                     };
+            var map = new kakao.maps.Map(mapContainer, mapOption);
+            var markerPosition = new kakao.maps.LatLng(37.3860521, 127.1214038);
+
+            var marker = new kakao.maps.Marker({
+               position: markerPosition
+            });
+
+            marker.setMap(map);
+				
+			// 마커를 제거하는 코드
+			// marker.setMap(null);
+			</script>
+		</div>
+	</div>
+</table>
+</center>
+</body>
+</html>
