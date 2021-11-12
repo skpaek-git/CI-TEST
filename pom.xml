@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ROOT</groupId>
   <artifactId>ROOT</artifactId>
-  <version>0.0.1</version>
+  <version>test</version>
   <packaging>war</packaging>
   <name>ROOT</name>
   <properties>
