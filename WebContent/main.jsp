@@ -20,7 +20,7 @@ body {
 </head>
 <center>
 <body>
-<img src="./서울리조트.jpg" border=0 id=mainImage alt="YsjImage" style="width:800px; heigth:600px;">
+<img src="./아무거나.jpg">
 <script>
 	var myImage=document.getElementById("mainImage");
 	var imageArray=["./서울리조트.jpg", "./서울리조트2.jpg", "./서울리조트3.jpg", "./서울리조트4.jpg", "./서울리조트5.jpg", "./서울리조트6.jpg"];
