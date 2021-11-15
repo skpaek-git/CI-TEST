@@ -35,7 +35,7 @@ body {
 	setInterval(changeImage,2000);
 </script>
 <br><br>
-<span style="font-family: 'Petit Formal Script', cursive; font-size:100">WelCome!! Seoul Resort</span><br>
+<span style="font-family: 'Petit Formal Script', cursive; font-size:100">abcdefg WelCome!! Seoul Resort</span><br>
 <%
 	SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 hh시 mm분 ss초");
 	Calendar c = Calendar.getInstance();
