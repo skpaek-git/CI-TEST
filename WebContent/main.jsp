@@ -12,7 +12,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Song+Myung&display=swap" rel="stylesheet">
 <style>
 body {
-	background-image: url("./배경화면.jpg");
 	background-repeat:no-repeat;
 	background-size: cover;
 }
@@ -23,7 +22,7 @@ body {
 <img src="./아무거나.jpg">
 <script>
 	var myImage=document.getElementById("mainImage");
-	var imageArray=["./서울리조트.jpg", "./서울리조트2.jpg", "./서울리조트3.jpg", "./서울리조트4.jpg", "./서울리조트5.jpg", "./서울리조트6.jpg"];
+	var imageArray=["./아무거나.jpg"];
 	var imageIndex=0;
 	
 	function changeImage(){
