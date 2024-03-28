@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> <!-- 한글로 인코딩 -->
+		<title>아무거나</title>
+		<link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+<style type='text/css'>
+	td {
+	font-size:12; text-align:center;}
+	a:link {text-decoration:none;}
+	a:visited {text-decoration:none;}
+	a:hover {text-decoration:none;}
+	a:acvite {text-decoration:none;
+	}
+	#aa {
+	background-color:#ffffff;
+	}
+</style>
+<script language='javascript' type='text/javascript'>
+var muCnt = 5; // 메뉴 수
+function fncShow(pos) {
+	var i = 0;
+	for(i; i < muCnt; i++) {
+		var obj = document.getElementById("menu" + i);
+		var obj2 = document.getElementById("m" + i);
+		if(i == pos) {
+			obj.style.display = '';
+			obj2.style.color="#ff0000";
+		} else {
+			obj.style.display = 'none';
+			obj2.style.color="#000000";
+		}
+	}
+}
+function fncHide(pos) {
+	var obj = document.getElementById("menu" + pos);
+	obj.style.display = 'none';
+}
+</script>
+</head>
+<body link="black" vlink="black">
+<center>
+	<table cellpadding='0' cellspacing='1' border='0' width='900'>
+		<td width='150'><a href='main.jsp' target=main><img src="./로고.png" width=179px height=75px></a></td>
+		<td>
+	<table id="aa" cellpadding='0' cellspacing='1' border='0' width='900' height='60' style="font-family: 'Song Myung', serif;">	
+		<tr height='30'>
+			<td width='100' onmouseover='fncShow(0);' id='m0'> 계속 테스트 중Seoul Resort  </td>
+			<td width='100' onmouseover='fncShow(1);' id='m1'> 계속 테스트 중 2 MAP </td>
+			<td width='100' onmouseover='fncShow(2);' id='m2'> 테스트 중LandMark  </td>
+			<td width='100' onmouseover='fncShow(3);' id='m3'> Reservation  </td>
+			<td width='100' onmouseover='fncShow(4);' id='m4'> Resort News </td>
+			<td width='40'>
+			</td>		
+		</tr>
+	<tr height='30'>
+		<td colspan='6'>
+					<table id='menu0' style='display:none', cellspacing='0' cellpadding='0' border='0' width='900' height='30'>
+						<tr>
+							<td width='0'></td>
+							<td width=900 style='text-align:left;'>
+								<a href='main.jsp' target=main>
+								 <span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 테스트 중 </span>
+								 <!-- <span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| Test </span> -->
+								</a>
+								<a href='a_01.html' target=main>
+								<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| VIP 룸 </span>
+								</a>
+								<a href='a_02.html' target=main>
+								<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 일반 룸 </span>
+								</a>
+								<a href='a_03.html' target=main>
+								<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 합리적인 룸 |</span>
+								</a>
+							</td>
+						</tr>
+					</table>
+			<table id='menu1' style='display:none;' cellpadding='0' cellspacing='0' width='900' height='30'>
+				<tr>
+					<td width='100'></td>
+					<td width='800' style='text-align:left;'>
+						<a href='b_01.html' target=main>
+						<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 찾아오는 길 </span>
+						</a>
+						<a href='b_02.html' target=main>
+						<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 대중교통 이용 </span>
+						</a>
+						<a href='b_03.html' target=main>
+						<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 자가용 이용 |</span>
+						</a>
+					</td>
+				</tr>
+			</table>
+			<table id='menu2' style='display:none;' cellpadding='0' cellspacing='0' width='900' height='30'>
+				<tr>
+					<td width='310'></td>
+					<td width='590' style='text-align:left;'>
+						<a href='c_01.html' target=main>
+							<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 남산 </span>
+							</a>
+							<a href='c_02.html' target=main>
+							<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 경복궁 </span>
+							</a>
+							<a href='c_03.html' target=main>
+							<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 롯데 월드 |</span>
+						</a>
+					</td>
+				</tr>
+			</table>
+			<table id='menu3' style='display:none;' cellpadding='0' cellspacing='0' width='900' height='30'>
+				<tr>
+					<td width='300'></td>
+					<td width='600' style='text-align:left;'>
+						<a href='d_01.jsp' target=main>
+						<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 예약 상황 </span>
+						</a>
+						<a href='d_02.jsp' target=main>
+						<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 예약 하기 </span>
+						</a>
+						<a href='adm_allview.jsp' target=main>
+						<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 관리자 페이지 </span>
+						</a>
+						<a href='adm_logout.jsp' target=main>
+						<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 관리자 로그아웃 |</span>
+						</a>
+					</td>
+				</tr>
+			</table>
+			<table id='menu4' style='display:none;' cellpadding='0' cellspacing='0' width='900' height='30'>
+				<tr>
+					<td width='660'></td>
+					<td width='240' style='text-align:left;'>
+						<a href='e_01.jsp' target=main>
+						<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 리조트 소식 </span>
+						</a>
+						<a href='e_02.jsp' target=main>
+						<span onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#000000'">| 이용 후기 |</span>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>

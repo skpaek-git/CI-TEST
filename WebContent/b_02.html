@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@900&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+<style>
+	body {
+	background-image: url("./배경화면.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	}
+</style>
+</head>
+<body>
+<center>
+<h1 align="center" style="font-family: 'Noto Serif KR', serif;"> 찾아 오시는 길(대중교통)</h1>
+<table width=800>
+	<div class="map">
+		<div class="kakaoMap">
+			<div id="map" style="width:50%;height:378px;"></div>				
+			<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8caf09f28bd9787a5acf6164aa3f7c4f&libraries=services"></script>
+			
+			<script>
+            var mapContainer = document.getElementById('map'),
+               mapOption = {
+                        center: new kakao.maps.LatLng(37.3860521, 127.1214038),
+                        level: 3 
+                     };
+            var map = new kakao.maps.Map(mapContainer, mapOption);
+            var markerPosition = new kakao.maps.LatLng(37.3860521, 127.1214038);
+
+            var marker = new kakao.maps.Marker({
+               position: markerPosition
+            });
+            marker.setMap(map);
+			// 마커를 제거하는 코드
+			// marker.setMap(null);
+			</script>
+		</div>
+	</div>
+</table>
+</center>
+<table width=1200 align="center">
+	<tr>
+		<td><h3>지하철</h3></td>
+	</tr>
+	<tr>
+		<td>▶분당선 서현역 4번 출구(AK프라자 2번 출구)에서 성남교육지원청 방향으로 도보 3분</td>
+	</tr>
+	<tr>
+		<td></td>
+	</tr>
+	<tr>
+		<td><h3>버스</h3>
+	</tr>
+	<tr>
+		<td>▶광역 3500 이용시</td>
+	</tr>
+	<tr>
+		<td>&nbsp;&nbsp;① 서현역·분당우체국 정류장(분당구청후문 방향) 하차. 분당구청 방향으로 직진 후 성남교육지원청 방향으로 우회전하여 도보 2분</td>
+	</tr>
+	<tr>
+		<td>▶광역 3500 이용시, 마을 3-1, 32, 72, 74, 602 이용시</td>
+	</tr>
+	<tr>
+		<td>&nbsp;&nbsp;① 서현역·분당우체국 정류장(이매촌 한신.AK프라자 방향) 하차. 분당구청 방향으로 직진 후 성남교육지원청 방향으로 우회전하여 도보 2분</td>
+	</tr>
+</table>
+</body>
+</html>
